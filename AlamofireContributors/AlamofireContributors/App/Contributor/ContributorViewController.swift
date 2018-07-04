@@ -8,17 +8,20 @@
 
 import UIKit
 import Kingfisher
+import SnapKit
 
-protocol ContributorViewProtocol: class {
-   func configUI()
+protocol ContributorViewProtocol: ViewControllerProtocol {
+    func configUI()
+    func addBlockInfoView(for blockInfo: BlockInfo)
+    func addEmptyView()
 }
 
-class ContributorViewController: UIViewController {
+class ContributorViewController: ViewController {
     // MARK: - Public properties
     var presenter: ContributorPresenterProtocol?
     var configurator: ContributorConfiguratorProtocol?
     @IBOutlet private weak var avatarView: CircleImageView?
-    @IBOutlet private weak var descriptionLabel: UILabel?
+    @IBOutlet private weak var stackView: UIStackView!
     // MARK: - Private properties
     
     // MARK: - View lifecycle
@@ -40,11 +43,39 @@ class ContributorViewController: UIViewController {
 }
 
 extension ContributorViewController:  ContributorViewProtocol {
-    func configUI() {
 
-        configDescriptionLabel()
+    func addBlockInfoView(for blockInfo: BlockInfo) {
+        let titleView = TitleLabel(frame: .zero)
+        titleView.text = blockInfo.0
+        let descriptionView = DescriptionLabel(frame: .zero)
+        descriptionView.text = blockInfo.1
+        let containerView = UIView(frame: .zero)
+        containerView.addSubview(titleView)
+        containerView.addSubview(descriptionView)
+        stackView.addArrangedSubview(containerView)
+        titleView.snp.makeConstraints { maker in
+            maker.leading.trailing.top.equalToSuperview()
+            maker.height.lessThanOrEqualTo(30)
+        }
+        descriptionView.snp.makeConstraints { maker in
+            maker.leading.trailing.bottom.equalToSuperview()
+            maker.top.equalTo(titleView.snp.bottom)
+        }
+    }
+
+    func addEmptyView() {
+        let view = UIView(frame: .zero)
+        stackView.addArrangedSubview(view)
+    }
+
+    func configUI() {
+        configStackView()
         configImageView()
         navigationBarConfig()
+    }
+
+    private func configStackView() {
+        stackView.distribution = .fillProportionally
     }
 
     private func navigationBarConfig() {
@@ -54,14 +85,7 @@ extension ContributorViewController:  ContributorViewProtocol {
     }
 
     private func configImageView() {
-         avatarView?.kf.setImage(with: presenter?.imageURL, placeholder: R.image.placeholder())
+        avatarView?.kf.setImage(with: presenter?.imageURL, placeholder: R.image.placeholder())
     }
-
-    private func configDescriptionLabel() {
-        descriptionLabel?.text = presenter?.contributorDescription
-        descriptionLabel?.numberOfLines = 0
-        descriptionLabel?.lineBreakMode = .byWordWrapping
-    }
-
 
 }
