@@ -78,19 +78,17 @@
                                                     <constraint firstAttribute="width" constant="120" id="nDx-q2-KAH"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-7O-Bgp">
-                                                <rect key="frame" x="16" y="156" width="343" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o0O-wq-JJj">
+                                                <rect key="frame" x="0.0" y="156" width="375" height="511"/>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="bF4-mn-3rX" firstAttribute="centerX" secondItem="4wX-0f-H2v" secondAttribute="centerX" id="0nb-i0-fYM"/>
-                                            <constraint firstAttribute="trailing" secondItem="gZ5-7O-Bgp" secondAttribute="trailing" constant="16" id="3og-sf-gnL"/>
-                                            <constraint firstItem="gZ5-7O-Bgp" firstAttribute="top" secondItem="bF4-mn-3rX" secondAttribute="bottom" constant="16" id="LnQ-0q-TX4"/>
-                                            <constraint firstItem="gZ5-7O-Bgp" firstAttribute="leading" secondItem="4wX-0f-H2v" secondAttribute="leading" constant="16" id="nS9-3R-J6l"/>
+                                            <constraint firstAttribute="bottom" secondItem="o0O-wq-JJj" secondAttribute="bottom" id="NvJ-hi-3T7"/>
+                                            <constraint firstAttribute="trailing" secondItem="o0O-wq-JJj" secondAttribute="trailing" id="Qe4-jG-aay"/>
+                                            <constraint firstItem="o0O-wq-JJj" firstAttribute="leading" secondItem="4wX-0f-H2v" secondAttribute="leading" id="jRN-PZ-Dlv"/>
+                                            <constraint firstItem="o0O-wq-JJj" firstAttribute="top" secondItem="bF4-mn-3rX" secondAttribute="bottom" constant="16" id="nuA-jg-SJT"/>
                                             <constraint firstItem="bF4-mn-3rX" firstAttribute="top" secondItem="4wX-0f-H2v" secondAttribute="top" constant="20" id="qF7-SJ-Ibg"/>
                                         </constraints>
                                     </view>
@@ -116,7 +114,7 @@
                     </view>
                     <connections>
                         <outlet property="avatarView" destination="bF4-mn-3rX" id="UQD-IS-t5O"/>
-                        <outlet property="descriptionLabel" destination="gZ5-7O-Bgp" id="nmh-g1-0BU"/>
+                        <outlet property="stackView" destination="o0O-wq-JJj" id="jMH-Ak-T6J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVG-54-b9H" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Moya_ObjectMapper
+import Moya
 import Alamofire
 
 typealias ContributorsCompletion = (Result<[Contributor]>) -> ()
@@ -17,12 +17,22 @@ protocol ContributorsDownloadProtocol {
 }
 
 final class ContributorsDownloadService: ContributorsDownloadProtocol {
-    func fetchContributors(with completion: @escaping ContributorsCompletion) {
-        var contributors: [Contributor] = []
-        for _ in 1...20 {
-            contributors.append(Contributor.fakeContributor())
-        }
-        completion(.success(contributors))
-    }
+    private let provider = MoyaProvider<NetworkingService>(plugins: [NetworkLoggerPlugin(verbose: true)])
 
+    func fetchContributors(with completion: @escaping ContributorsCompletion) {
+        provider.request(.contributors) { result in
+            switch result {
+            case let .success(response):
+                if let items = try? response.mapArray(Contributor.self) {
+                    completion(.success(items))
+                } else {
+                    let error: MoyaError = .jsonMapping(response)
+                    completion(.failure(error))
+                }
+            case let .failure(error):
+                completion(.failure(error))
+            }
+
+        }
+    }
 }

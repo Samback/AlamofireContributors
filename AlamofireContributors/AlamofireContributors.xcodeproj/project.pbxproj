@@ -13,7 +13,31 @@
 		344D4F3720ECB17400536145 /* ContributorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3220ECB17400536145 /* ContributorConfigurator.swift */; };
 		344D4F3820ECB17400536145 /* ContributorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3320ECB17400536145 /* ContributorProvider.swift */; };
 		344D4F3B20ECB40C00536145 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3A20ECB40C00536145 /* CircleImageView.swift */; };
-		344D4F3C20ECB40C00536145 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3A20ECB40C00536145 /* CircleImageView.swift */; };
+		344D4F3E20ECBCA200536145 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3D20ECBCA200536145 /* NetworkingService.swift */; };
+		346DA66220ECC17600BEEFC9 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66120ECC17600BEEFC9 /* String+extensions.swift */; };
+		346DA66420ECC24C00BEEFC9 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66320ECC24C00BEEFC9 /* TitleLabel.swift */; };
+		346DA66620ECC2D100BEEFC9 /* DescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66520ECC2D100BEEFC9 /* DescriptionLabel.swift */; };
+		346DA66820ECC9D300BEEFC9 /* ContributorDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66720ECC9D300BEEFC9 /* ContributorDownloadService.swift */; };
+		346DA66A20ECD21700BEEFC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66920ECD21700BEEFC9 /* ViewController.swift */; };
+		34C10D9C20ECDDD1009B30FD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398A20EBA6D600853ECF /* R.generated.swift */; };
+		34C10DA020ECDE41009B30FD /* ContributorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397A20EBA34B00853ECF /* ContributorsPresenter.swift */; };
+		34C10DA120ECDE41009B30FD /* ContributorsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397B20EBA34B00853ECF /* ContributorsRouter.swift */; };
+		34C10DA220ECDE41009B30FD /* ContributorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397C20EBA34B00853ECF /* ContributorsViewController.swift */; };
+		34C10DA320ECDE41009B30FD /* ContributorsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397D20EBA34B00853ECF /* ContributorsConfigurator.swift */; };
+		34C10DA420ECDE41009B30FD /* ContributorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397E20EBA34B00853ECF /* ContributorsProvider.swift */; };
+		34C10DA820ECDE58009B30FD /* ContributorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F2F20ECB17400536145 /* ContributorPresenter.swift */; };
+		34C10DA920ECDE58009B30FD /* ContributorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3020ECB17400536145 /* ContributorRouter.swift */; };
+		34C10DAA20ECDE58009B30FD /* ContributorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3120ECB17400536145 /* ContributorViewController.swift */; };
+		34C10DAB20ECDE58009B30FD /* ContributorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3220ECB17400536145 /* ContributorConfigurator.swift */; };
+		34C10DAC20ECDE58009B30FD /* ContributorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3320ECB17400536145 /* ContributorProvider.swift */; };
+		34C10DAE20ECDE5E009B30FD /* ContributorsDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */; };
+		34C10DAF20ECDE5E009B30FD /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3D20ECBCA200536145 /* NetworkingService.swift */; };
+		34C10DB020ECDE5E009B30FD /* ContributorDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66720ECC9D300BEEFC9 /* ContributorDownloadService.swift */; };
+		34C10DB320ECDE65009B30FD /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3A20ECB40C00536145 /* CircleImageView.swift */; };
+		34C10DB420ECDE65009B30FD /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66320ECC24C00BEEFC9 /* TitleLabel.swift */; };
+		34C10DB520ECDE65009B30FD /* DescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66520ECC2D100BEEFC9 /* DescriptionLabel.swift */; };
+		34C10DB620ECDE65009B30FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66920ECD21700BEEFC9 /* ViewController.swift */; };
+		34C10DB720ECDE75009B30FD /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DA66120ECC17600BEEFC9 /* String+extensions.swift */; };
 		34C7395920EBA11D00853ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7395820EBA11D00853ECF /* AppDelegate.swift */; };
 		34C7395E20EBA11D00853ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C7395C20EBA11D00853ECF /* Main.storyboard */; };
 		34C7396020EBA11F00853ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C7395F20EBA11F00853ECF /* Assets.xcassets */; };
@@ -26,7 +50,6 @@
 		34C7398320EBA34B00853ECF /* ContributorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397E20EBA34B00853ECF /* ContributorsProvider.swift */; };
 		34C7398B20EBA6D600853ECF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398A20EBA6D600853ECF /* R.generated.swift */; };
 		34C7398E20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */; };
-		34C7398F20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */; };
 		34C7399220EBA77B00853ECF /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399120EBA77B00853ECF /* Contributor.swift */; };
 		34C7399320EBA77B00853ECF /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399120EBA77B00853ECF /* Contributor.swift */; };
 		34C7399620EBAB2500853ECF /* ContributorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399520EBAB2500853ECF /* ContributorCell.swift */; };
@@ -56,6 +79,12 @@
 		344D4F3220ECB17400536145 /* ContributorConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorConfigurator.swift; sourceTree = "<group>"; };
 		344D4F3320ECB17400536145 /* ContributorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorProvider.swift; sourceTree = "<group>"; };
 		344D4F3A20ECB40C00536145 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		344D4F3D20ECBCA200536145 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		346DA66120ECC17600BEEFC9 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
+		346DA66320ECC24C00BEEFC9 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		346DA66520ECC2D100BEEFC9 /* DescriptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionLabel.swift; sourceTree = "<group>"; };
+		346DA66720ECC9D300BEEFC9 /* ContributorDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorDownloadService.swift; sourceTree = "<group>"; };
+		346DA66920ECD21700BEEFC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34C7395520EBA11D00853ECF /* AlamofireContributors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireContributors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C7395820EBA11D00853ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C7395D20EBA11D00853ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,8 +155,19 @@
 			isa = PBXGroup;
 			children = (
 				344D4F3A20ECB40C00536145 /* CircleImageView.swift */,
+				346DA66320ECC24C00BEEFC9 /* TitleLabel.swift */,
+				346DA66520ECC2D100BEEFC9 /* DescriptionLabel.swift */,
+				346DA66920ECD21700BEEFC9 /* ViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		346DA66020ECC16500BEEFC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				346DA66120ECC17600BEEFC9 /* String+extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		34C7394C20EBA11D00853ECF = {
@@ -153,6 +193,7 @@
 		34C7395720EBA11D00853ECF /* AlamofireContributors */ = {
 			isa = PBXGroup;
 			children = (
+				346DA66020ECC16500BEEFC9 /* Extensions */,
 				344D4F3920ECB3EF00536145 /* UI */,
 				34C7399820EBACA800853ECF /* Helpers */,
 				34C7399020EBA76700853ECF /* Models */,
@@ -211,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */,
+				344D4F3D20ECBCA200536145 /* NetworkingService.swift */,
+				346DA66720ECC9D300BEEFC9 /* ContributorDownloadService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -281,6 +324,7 @@
 				34C7396520EBA11F00853ECF /* Sources */,
 				34C7396620EBA11F00853ECF /* Frameworks */,
 				34C7396720EBA11F00853ECF /* Resources */,
+				43E4CEAB5B3A52B21EEF9D4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +408,38 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
 		};
+		43E4CEAB5B3A52B21EEF9D4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlamofireContributorsTests/Pods-AlamofireContributorsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamofireContributorsTests/Pods-AlamofireContributorsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B0BF8268A11552C31E968BC8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,19 +518,25 @@
 				344D4F3620ECB17400536145 /* ContributorViewController.swift in Sources */,
 				34C7398120EBA34B00853ECF /* ContributorsViewController.swift in Sources */,
 				344D4F3720ECB17400536145 /* ContributorConfigurator.swift in Sources */,
+				344D4F3E20ECBCA200536145 /* NetworkingService.swift in Sources */,
 				34C7399620EBAB2500853ECF /* ContributorCell.swift in Sources */,
 				34C7399220EBA77B00853ECF /* Contributor.swift in Sources */,
 				34C7398E20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */,
+				346DA66A20ECD21700BEEFC9 /* ViewController.swift in Sources */,
 				34C7398B20EBA6D600853ECF /* R.generated.swift in Sources */,
 				34C7399A20EBACBD00853ECF /* Helpers.swift in Sources */,
+				346DA66620ECC2D100BEEFC9 /* DescriptionLabel.swift in Sources */,
 				344D4F3B20ECB40C00536145 /* CircleImageView.swift in Sources */,
 				34C7397F20EBA34B00853ECF /* ContributorsPresenter.swift in Sources */,
 				344D4F3520ECB17400536145 /* ContributorRouter.swift in Sources */,
 				344D4F3820ECB17400536145 /* ContributorProvider.swift in Sources */,
+				346DA66420ECC24C00BEEFC9 /* TitleLabel.swift in Sources */,
 				34C7398320EBA34B00853ECF /* ContributorsProvider.swift in Sources */,
+				346DA66220ECC17600BEEFC9 /* String+extensions.swift in Sources */,
 				344D4F3420ECB17400536145 /* ContributorPresenter.swift in Sources */,
 				34C7395920EBA11D00853ECF /* AppDelegate.swift in Sources */,
 				34C7398220EBA34B00853ECF /* ContributorsConfigurator.swift in Sources */,
+				346DA66820ECC9D300BEEFC9 /* ContributorDownloadService.swift in Sources */,
 				34C7398020EBA34B00853ECF /* ContributorsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,10 +546,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C7396E20EBA11F00853ECF /* AlamofireContributorsTests.swift in Sources */,
+				34C10DAB20ECDE58009B30FD /* ContributorConfigurator.swift in Sources */,
+				34C10DA820ECDE58009B30FD /* ContributorPresenter.swift in Sources */,
 				34C7399320EBA77B00853ECF /* Contributor.swift in Sources */,
+				34C10DB720ECDE75009B30FD /* String+extensions.swift in Sources */,
+				34C10DB620ECDE65009B30FD /* ViewController.swift in Sources */,
+				34C10DA020ECDE41009B30FD /* ContributorsPresenter.swift in Sources */,
+				34C10DB020ECDE5E009B30FD /* ContributorDownloadService.swift in Sources */,
 				34C7399B20EBACBD00853ECF /* Helpers.swift in Sources */,
-				34C7398F20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */,
-				344D4F3C20ECB40C00536145 /* CircleImageView.swift in Sources */,
+				34C10D9C20ECDDD1009B30FD /* R.generated.swift in Sources */,
+				34C10DAA20ECDE58009B30FD /* ContributorViewController.swift in Sources */,
+				34C10DB520ECDE65009B30FD /* DescriptionLabel.swift in Sources */,
+				34C10DA220ECDE41009B30FD /* ContributorsViewController.swift in Sources */,
+				34C10DA120ECDE41009B30FD /* ContributorsRouter.swift in Sources */,
+				34C10DA320ECDE41009B30FD /* ContributorsConfigurator.swift in Sources */,
+				34C10DB320ECDE65009B30FD /* CircleImageView.swift in Sources */,
+				34C10DB420ECDE65009B30FD /* TitleLabel.swift in Sources */,
+				34C10DAE20ECDE5E009B30FD /* ContributorsDownloadService.swift in Sources */,
+				34C10DAC20ECDE58009B30FD /* ContributorProvider.swift in Sources */,
+				34C10DAF20ECDE5E009B30FD /* NetworkingService.swift in Sources */,
+				34C10DA420ECDE41009B30FD /* ContributorsProvider.swift in Sources */,
+				34C10DA920ECDE58009B30FD /* ContributorRouter.swift in Sources */,
 				34C7399720EBAB2500853ECF /* ContributorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

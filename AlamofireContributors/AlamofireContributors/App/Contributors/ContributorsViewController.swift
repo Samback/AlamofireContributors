@@ -11,13 +11,13 @@ import Foundation
 import Kingfisher
 import Rswift
 
-protocol ContributorsViewProtocol: class {
+protocol ContributorsViewProtocol: ViewControllerProtocol {
     func reloadTable()
     func configTableView()
     func configUI()
 }
 
-class ContributorsViewController: UIViewController {
+class ContributorsViewController: ViewController {
     // MARK: - Public properties
     var presenter: (ContributorsPresenterProtocol & ContributorsPresenterDataSourceProtocol)?
     var configurator: ContributorsConfiguratorProtocol?

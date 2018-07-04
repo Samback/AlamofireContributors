@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 protocol ContributorsPresenterProtocol: class {
     var view: ContributorsViewProtocol? { get set }
@@ -17,7 +18,7 @@ protocol ContributorsPresenterProtocol: class {
 
 protocol ContributorsPresenterDataSourceProtocol {
     func numberOfContributors(at section: Int) -> Int
-    func contributor(at indexPath: IndexPath) -> Contributor
+    func contributor(at indexPath: IndexPath) -> Contributor?
 }
 
 class ContributorsPresenter {
@@ -54,15 +55,22 @@ extension ContributorsPresenter: ContributorsPresenterProtocol {
     func viewDidLoad() {
         view?.configTableView()
         view?.configUI()
+        view?.startSpinner()
         loader.fetchContributors { [weak self] result in
-            switch result {
-            case .failure(let error):
-                //TODO: Handle erros
-                print("Error \(error)")
-            case .success(let contributors):
-                self?.contributors = contributors
-                self?.view?.reloadTable()
+            mainThread {
+                self?.view?.stopSpinner()
+                self?.parse(result)
             }
+        }
+    }
+
+    private func parse(_ result: Result<[Contributor]>) {
+        switch result {
+        case .failure(let error):
+            view?.showAlert(with: error)
+        case .success(let contributors):
+            self.contributors = contributors
+            view?.reloadTable()
         }
     }
 }
@@ -76,12 +84,12 @@ extension ContributorsPresenter: ContributorsPresenterDataSourceProtocol {
         return 0
     }
 
-    func contributor(at indexPath: IndexPath) -> Contributor {
+    func contributor(at indexPath: IndexPath) -> Contributor? {
         if indexPath.section == 0
             && indexPath.row >= 0
             && indexPath.row <= contributors.count {
             return contributors[indexPath.row]
         }
-        fatalError("Out of bounds of contributors list")
+        return nil
     }
 }

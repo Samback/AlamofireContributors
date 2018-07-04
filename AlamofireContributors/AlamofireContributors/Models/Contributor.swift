@@ -5,22 +5,37 @@
 //  Created by Max Tymchii on 7/3/18.
 //  Copyright © 2018 Max Tymchii. All rights reserved.
 //
-
 import Foundation
-struct Contributor {
+import Moya_ObjectMapper
+import Moya
+import ObjectMapper
+
+final class Contributor: Mappable {
     var id: Int!
     var image: String?
     var name: String?
-}
+    var bio: String?
+    var company: String?
+    var blog: String?
 
-
-extension Contributor {
-    static func fakeContributor() -> Contributor {
-        return Contributor(id: 0,
-                           image: "https://avatars1.githubusercontent.com/u/3932972?s=400&v=4",
-                           name: "Nicolas")
+    init?(map: Map) {
     }
 
+    func mapping(map: Map) {
+        id <- map["id"]
+        name <- map["login"]
+        image <- map["avatar_url"]
+        bio <- map["bio"]
+        company <- map["company"]
+        blog <- map["blog"]
+    }
+
+    var usrePathTail: String {
+        return "/users/\(name ?? "")"
+    }
+}
+
+extension Contributor {
     var imageURL: URL? {
         guard let image = image else {
             return nil

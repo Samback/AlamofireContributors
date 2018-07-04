@@ -22,7 +22,9 @@ class ContributorConfigurator {
 extension ContributorConfigurator: ContributorConfiguratorProtocol {
     func config(with viewController: ContributorViewController) {
         let router = ContributorRouter(with: viewController)
-        let presenter = ContributorPresenter(with: router, view: viewController, contributor: contributor)
+        let loader = ContributorDownloadService(with: contributor)
+        let presenter = ContributorPresenter(with: router, view: viewController,
+                                             contributor: contributor, loader: loader)
         viewController.presenter = presenter
     }
 }
