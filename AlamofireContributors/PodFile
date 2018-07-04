@@ -15,4 +15,11 @@ end
 
 target "AlamofireContributorsTests" do
 use_frameworks!
+pod 'Kingfisher'
+pod 'Alamofire'
+pod 'SnapKit'
+pod 'Moya-ObjectMapper'
+
+pod 'R.swift'
+pod 'SwiftLint'
 end
