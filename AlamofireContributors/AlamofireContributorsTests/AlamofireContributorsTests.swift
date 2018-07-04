@@ -7,30 +7,78 @@
 //
 
 import XCTest
+import Alamofire
+
 @testable import AlamofireContributors
 
+extension Contributor {
+    static func fakeContributor() -> Contributor {
+        var dict: [String: Any] = [:]
+        dict["id"] = 33
+        dict["login"] = "Cool"
+        dict["avatar_url"] = "sdvsdvsdvds"
+        dict["bio"] = "savbskvbsvksdnb,v"
+        dict["company"] = "sadvjks,vbsahjv"
+        dict["blog"] = "asdv"
+        let contributor = Contributor(JSON: dict)!
+        return contributor
+    }
+}
+
+class ContributorsRouterProtocolTest: ContributorsRouterProtocol {
+
+    func openNextScreen(with contributor: Contributor) {
+        print("OK")
+    }
+    var view: ContributorsViewController?
+}
+
+class ContributorsViewProtocolTest: ContributorsViewProtocol {
+    func configUI() {    }
+    func startSpinner() {}
+    func stopSpinner() {}
+    func reloadTable() { }
+    func configTableView() { }
+}
+
+
+
+class ContributorsDownloadServiceTest: ContributorsDownloadProtocol {
+    func fetchContributors(with completion: @escaping ContributorsCompletion) {
+        var items = [Contributor]()
+        items.append(Contributor.fakeContributor())
+        items.append(Contributor.fakeContributor())
+        items.append(Contributor.fakeContributor())
+        completion(.success(items))
+    }
+}
+
 class AlamofireContributorsTests: XCTestCase {
-    
+    var presenter: (ContributorsPresenterProtocol & ContributorsPresenterDataSourceProtocol)!
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        let loader = ContributorsDownloadServiceTest()
+        let view = ContributorsViewProtocolTest()
+        let router = ContributorsRouterProtocolTest()
+        presenter = ContributorsPresenter(with: router,
+                                          view: view ,
+                                          loader: loader)
+        let expectationThing = expectation(description: "Loading")
+        presenter.viewDidLoad()
+        gloabalThread(after: 2) {
+            expectationThing.fulfill()
         }
+        waitForExpectations(timeout: 3, handler: nil)
+
     }
-    
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testNumberCorrectNumberOfContributorsOnLoad() {
+        XCTAssert(presenter.numberOfContributors(at: 0) == 3)
+        XCTAssert(presenter.numberOfContributors(at: 1) == 0)
+    }
+
+    func testContributorInfo() {
+        XCTAssertNil(presenter.contributor(at: IndexPath(row: 1, section: 1)), "Go out of bounds")
+        XCTAssertNotNil(presenter.contributor(at: IndexPath(row: 0, section: 0)), "Stay on bounds")
+    }
 }
