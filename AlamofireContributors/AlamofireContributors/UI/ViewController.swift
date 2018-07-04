@@ -13,6 +13,7 @@ import UIKit
 protocol ViewControllerProtocol: class {
     func startSpinner()
     func stopSpinner()
+    func showAlert(with error: Error)
 }
 
 class ViewController: UIViewController {
@@ -31,5 +32,13 @@ extension ViewController: ViewControllerProtocol {
     func stopSpinner() {
         spinner.stopAnimating()
         spinner.removeFromSuperview()
+    }
+
+    func showAlert(with error: Error) {
+        let alertViewControler = UIAlertController(title: "Error", message: error.localizedDescription,
+                                                   preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertViewControler.addAction(ok)
+        present(alertViewControler, animated: true, completion: nil)
     }
 }
