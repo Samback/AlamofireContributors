@@ -10,7 +10,7 @@ import UIKit
 
 protocol ContributorsRouterProtocol: class {
     var view: ContributorsViewController? { get set }
-    func openNextScreen()
+    func openNextScreen(with contributor: Contributor)
 }
 
 class ContributorsRouter {
@@ -24,7 +24,8 @@ class ContributorsRouter {
 }
 
 extension ContributorsRouter: ContributorsRouterProtocol {
-    func openNextScreen() {
-
+    func openNextScreen(with contributor: Contributor) {
+        let contributorViewController = ContributorProvider(with: contributor).instantiate()
+        view?.navigationController?.pushViewController(contributorViewController, animated: true)
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Rswift
 
 protocol ContributorsProviderProtocol {
     func instantiate() -> ContributorsViewController
@@ -19,7 +20,9 @@ extension ContributorsProvider: ContributorsProviderProtocol {
     func instantiate() -> ContributorsViewController {
 
         let configurator = ContributorsConfigurator()
-        let viewController = ContributorsViewController()
+        guard let viewController = R.storyboard.main.contributorsViewController() else {
+            fatalError("Can't instantiate R.storyboard.main.contributorsViewController")
+        }
         viewController.configurator = configurator
 
         return viewController

@@ -18,9 +18,9 @@ class ContributorsConfigurator {
 
 extension ContributorsConfigurator: ContributorsConfiguratorProtocol {
     func config(with viewController: ContributorsViewController) {
-
+        let loader = ContributorsDownloadService()
         let router = ContributorsRouter(with: viewController)
-        let presenter = ContributorsPresenter(with: router, view: viewController)
+        let presenter = ContributorsPresenter(with: router, view: viewController, loader: loader)
         viewController.presenter = presenter
 
     }
