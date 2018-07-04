@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344D4F3420ECB17400536145 /* ContributorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F2F20ECB17400536145 /* ContributorPresenter.swift */; };
+		344D4F3520ECB17400536145 /* ContributorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3020ECB17400536145 /* ContributorRouter.swift */; };
+		344D4F3620ECB17400536145 /* ContributorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3120ECB17400536145 /* ContributorViewController.swift */; };
+		344D4F3720ECB17400536145 /* ContributorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3220ECB17400536145 /* ContributorConfigurator.swift */; };
+		344D4F3820ECB17400536145 /* ContributorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3320ECB17400536145 /* ContributorProvider.swift */; };
+		344D4F3B20ECB40C00536145 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3A20ECB40C00536145 /* CircleImageView.swift */; };
+		344D4F3C20ECB40C00536145 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D4F3A20ECB40C00536145 /* CircleImageView.swift */; };
 		34C7395920EBA11D00853ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7395820EBA11D00853ECF /* AppDelegate.swift */; };
 		34C7395E20EBA11D00853ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C7395C20EBA11D00853ECF /* Main.storyboard */; };
 		34C7396020EBA11F00853ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C7395F20EBA11F00853ECF /* Assets.xcassets */; };
@@ -17,6 +24,15 @@
 		34C7398120EBA34B00853ECF /* ContributorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397C20EBA34B00853ECF /* ContributorsViewController.swift */; };
 		34C7398220EBA34B00853ECF /* ContributorsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397D20EBA34B00853ECF /* ContributorsConfigurator.swift */; };
 		34C7398320EBA34B00853ECF /* ContributorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7397E20EBA34B00853ECF /* ContributorsProvider.swift */; };
+		34C7398B20EBA6D600853ECF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398A20EBA6D600853ECF /* R.generated.swift */; };
+		34C7398E20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */; };
+		34C7398F20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */; };
+		34C7399220EBA77B00853ECF /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399120EBA77B00853ECF /* Contributor.swift */; };
+		34C7399320EBA77B00853ECF /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399120EBA77B00853ECF /* Contributor.swift */; };
+		34C7399620EBAB2500853ECF /* ContributorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399520EBAB2500853ECF /* ContributorCell.swift */; };
+		34C7399720EBAB2500853ECF /* ContributorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399520EBAB2500853ECF /* ContributorCell.swift */; };
+		34C7399A20EBACBD00853ECF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399920EBACBD00853ECF /* Helpers.swift */; };
+		34C7399B20EBACBD00853ECF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7399920EBACBD00853ECF /* Helpers.swift */; };
 		8EA838D1DE7ECB410F14A29D /* Pods_AlamofireContributorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7224E4DA6EAD79F3BA00D42F /* Pods_AlamofireContributorsTests.framework */; };
 		F8E3E8E39675F8EB5D44D70B /* Pods_AlamofireContributors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3423BFDB610BF02F86159BF3 /* Pods_AlamofireContributors.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +50,12 @@
 /* Begin PBXFileReference section */
 		16721A4A2A2BE327C255257F /* Pods-AlamofireContributorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireContributorsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireContributorsTests/Pods-AlamofireContributorsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3423BFDB610BF02F86159BF3 /* Pods_AlamofireContributors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireContributors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		344D4F2F20ECB17400536145 /* ContributorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorPresenter.swift; sourceTree = "<group>"; };
+		344D4F3020ECB17400536145 /* ContributorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorRouter.swift; sourceTree = "<group>"; };
+		344D4F3120ECB17400536145 /* ContributorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorViewController.swift; sourceTree = "<group>"; };
+		344D4F3220ECB17400536145 /* ContributorConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorConfigurator.swift; sourceTree = "<group>"; };
+		344D4F3320ECB17400536145 /* ContributorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorProvider.swift; sourceTree = "<group>"; };
+		344D4F3A20ECB40C00536145 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		34C7395520EBA11D00853ECF /* AlamofireContributors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireContributors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C7395820EBA11D00853ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C7395D20EBA11D00853ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +70,11 @@
 		34C7397C20EBA34B00853ECF /* ContributorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewController.swift; sourceTree = "<group>"; };
 		34C7397D20EBA34B00853ECF /* ContributorsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsConfigurator.swift; sourceTree = "<group>"; };
 		34C7397E20EBA34B00853ECF /* ContributorsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsProvider.swift; sourceTree = "<group>"; };
+		34C7398A20EBA6D600853ECF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsDownloadService.swift; sourceTree = "<group>"; };
+		34C7399120EBA77B00853ECF /* Contributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
+		34C7399520EBAB2500853ECF /* ContributorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorCell.swift; sourceTree = "<group>"; };
+		34C7399920EBACBD00853ECF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		4E867275BDD68AE28CA8E22F /* Pods-AlamofireContributors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireContributors.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireContributors/Pods-AlamofireContributors.release.xcconfig"; sourceTree = "<group>"; };
 		7224E4DA6EAD79F3BA00D42F /* Pods_AlamofireContributorsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireContributorsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31E89FB1272D312C6D5380A /* Pods-AlamofireContributors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireContributors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireContributors/Pods-AlamofireContributors.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +110,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		344D4F2E20ECB15D00536145 /* Contributor */ = {
+			isa = PBXGroup;
+			children = (
+				344D4F2F20ECB17400536145 /* ContributorPresenter.swift */,
+				344D4F3020ECB17400536145 /* ContributorRouter.swift */,
+				344D4F3120ECB17400536145 /* ContributorViewController.swift */,
+				344D4F3220ECB17400536145 /* ContributorConfigurator.swift */,
+				344D4F3320ECB17400536145 /* ContributorProvider.swift */,
+			);
+			path = Contributor;
+			sourceTree = "<group>";
+		};
+		344D4F3920ECB3EF00536145 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				344D4F3A20ECB40C00536145 /* CircleImageView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		34C7394C20EBA11D00853ECF = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +153,11 @@
 		34C7395720EBA11D00853ECF /* AlamofireContributors */ = {
 			isa = PBXGroup;
 			children = (
+				344D4F3920ECB3EF00536145 /* UI */,
+				34C7399820EBACA800853ECF /* Helpers */,
+				34C7399020EBA76700853ECF /* Models */,
+				34C7398C20EBA72500853ECF /* Networking */,
+				34C7398720EBA43F00853ECF /* Resources */,
 				34C7397820EBA31300853ECF /* App */,
 				34C7395820EBA11D00853ECF /* AppDelegate.swift */,
 				34C7395C20EBA11D00853ECF /* Main.storyboard */,
@@ -128,6 +180,7 @@
 		34C7397820EBA31300853ECF /* App */ = {
 			isa = PBXGroup;
 			children = (
+				344D4F2E20ECB15D00536145 /* Contributor */,
 				34C7397920EBA31A00853ECF /* Contributors */,
 			);
 			path = App;
@@ -136,6 +189,7 @@
 		34C7397920EBA31A00853ECF /* Contributors */ = {
 			isa = PBXGroup;
 			children = (
+				34C7399420EBAB1000853ECF /* Cells */,
 				34C7397A20EBA34B00853ECF /* ContributorsPresenter.swift */,
 				34C7397B20EBA34B00853ECF /* ContributorsRouter.swift */,
 				34C7397C20EBA34B00853ECF /* ContributorsViewController.swift */,
@@ -143,6 +197,46 @@
 				34C7397E20EBA34B00853ECF /* ContributorsProvider.swift */,
 			);
 			path = Contributors;
+			sourceTree = "<group>";
+		};
+		34C7398720EBA43F00853ECF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34C7398A20EBA6D600853ECF /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		34C7398C20EBA72500853ECF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				34C7398D20EBA74C00853ECF /* ContributorsDownloadService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		34C7399020EBA76700853ECF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34C7399120EBA77B00853ECF /* Contributor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34C7399420EBAB1000853ECF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				34C7399520EBAB2500853ECF /* ContributorCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		34C7399820EBACA800853ECF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				34C7399920EBACBD00853ECF /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BF042E41A6DDE09E227EAEFC /* Pods */ = {
@@ -167,6 +261,7 @@
 				34C7395120EBA11D00853ECF /* Sources */,
 				34C7395220EBA11D00853ECF /* Frameworks */,
 				34C7395320EBA11D00853ECF /* Resources */,
+				34C7398420EBA3F700853ECF /* ShellScript */,
 				B0BF8268A11552C31E968BC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -256,6 +351,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		34C7398420EBA3F700853ECF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		B0BF8268A11552C31E968BC8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,9 +439,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344D4F3620ECB17400536145 /* ContributorViewController.swift in Sources */,
 				34C7398120EBA34B00853ECF /* ContributorsViewController.swift in Sources */,
+				344D4F3720ECB17400536145 /* ContributorConfigurator.swift in Sources */,
+				34C7399620EBAB2500853ECF /* ContributorCell.swift in Sources */,
+				34C7399220EBA77B00853ECF /* Contributor.swift in Sources */,
+				34C7398E20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */,
+				34C7398B20EBA6D600853ECF /* R.generated.swift in Sources */,
+				34C7399A20EBACBD00853ECF /* Helpers.swift in Sources */,
+				344D4F3B20ECB40C00536145 /* CircleImageView.swift in Sources */,
 				34C7397F20EBA34B00853ECF /* ContributorsPresenter.swift in Sources */,
+				344D4F3520ECB17400536145 /* ContributorRouter.swift in Sources */,
+				344D4F3820ECB17400536145 /* ContributorProvider.swift in Sources */,
 				34C7398320EBA34B00853ECF /* ContributorsProvider.swift in Sources */,
+				344D4F3420ECB17400536145 /* ContributorPresenter.swift in Sources */,
 				34C7395920EBA11D00853ECF /* AppDelegate.swift in Sources */,
 				34C7398220EBA34B00853ECF /* ContributorsConfigurator.swift in Sources */,
 				34C7398020EBA34B00853ECF /* ContributorsRouter.swift in Sources */,
@@ -345,6 +464,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C7396E20EBA11F00853ECF /* AlamofireContributorsTests.swift in Sources */,
+				34C7399320EBA77B00853ECF /* Contributor.swift in Sources */,
+				34C7399B20EBACBD00853ECF /* Helpers.swift in Sources */,
+				34C7398F20EBA74C00853ECF /* ContributorsDownloadService.swift in Sources */,
+				344D4F3C20ECB40C00536145 /* CircleImageView.swift in Sources */,
+				34C7399720EBAB2500853ECF /* ContributorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
