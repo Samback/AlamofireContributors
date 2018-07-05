@@ -34,6 +34,7 @@ class ContributorsRouterProtocolTest: ContributorsRouterProtocol {
 }
 
 class ContributorsViewProtocolTest: ContributorsViewProtocol {
+    func showAlert(with error: Error) {}
     func configUI() {    }
     func startSpinner() {}
     func stopSpinner() {}
